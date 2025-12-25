@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: QuadWater
+  m_Shader: {fileID: 4800000, guid: 2b57a7713e7c2dc408c400e27e4f6ea7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap1:
+        m_Texture: {fileID: 2800000, guid: 9498daaf03362d649a6b75c6f5b475c8, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0.02, y: 0.1}
+    - _BumpMap2:
+        m_Texture: {fileID: 2800000, guid: 256c7f2162f760b488971c7a7806cfe0, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0.1, y: 0.02}
+    - _FoamTexture:
+        m_Texture: {fileID: 2800000, guid: d5de43436c7d57b499f0a781be1649a9, type: 3}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0.1, y: 0.1}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceDistortion:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 0.25
+    - _DepthMaxDistance: 7.5
+    - _EyeMaxDistance: 100
+    - _FoamIntensity: 2
+    - _FoamLinesSpeed: 0.5
+    - _FoamMaxDistance: 0.25
+    - _FoamWaveCount: 8
+    - _FoamWaveMaxDistance: 5
+    - _FoamWaveSpeed: 0.5
+    - _FoamWavepeed: 0.5
+    - _FresnelDensity: 1
+    - _FresnelPower: 0.5
+    - _Gloss: 1024
+    - _Glossiness: 0.63
+    - _MaxShadowDistance: 150
+    - _ReflectDensity: 0.75
+    - _ReflectPower: 2
+    - _RippleFrequency: 0.3
+    - _RippleRadius: 0.089
+    - _RippleWidth: 0.085
+    - _SpecularStrength: 1.56
+    - _SurfaceDistortionAmount: 0.27
+    m_Colors:
+    - _DepthDeepColor: {r: 0.06180133, g: 0.27039915, b: 0.5283019, a: 1}
+    - _DepthShallowColor: {r: 0.12758985, g: 0.48256308, b: 0.6037736, a: 0.5882353}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RippleRange: {r: 0.3, g: 0.7, b: 1.5, a: 3}
+    - _RippleUVTS: {r: 50, g: 50, b: 0, a: 0}
+    - _ShadowColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+    - _Specular: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
