@@ -1,0 +1,21 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel Sphere
+#include "../ValueGenerator.compute"
+
+float radius;
+
+[numthreads(numThreads,numThreads,numThreads)]
+void Sphere (int3 id : SV_DispatchThreadID)
+{
+    if (id.x >= numPointsPerAxis || id.y >= numPointsPerAxis || id.z >= numPointsPerAxis) 
+    {
+        return;
+    }
+
+    int index = indexFromCoord(id.x,id.y,id.z);
+
+    float3 offset = id * cubeSize - numPointsPerAxis * cubeSize * 0.5;
+    float3 pos = center + offset;
+
+    points[index] = float4(pos, length(offset) - radius);
+}

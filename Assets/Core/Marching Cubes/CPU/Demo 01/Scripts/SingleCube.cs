@@ -60,7 +60,6 @@ namespace MarchingCubes01
 
         private void OnDrawGizmos()
         {
-
             if (marchingCube != null)
             {
                 marchingCube.DrawCube(transform.position, size * Vector3.one, gizmosSettings);

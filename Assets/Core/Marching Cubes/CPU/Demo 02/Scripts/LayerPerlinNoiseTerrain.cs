@@ -79,7 +79,6 @@ namespace MarchingCubes02
             mesh.triangles = main.Triangles;
             mesh.colors = main.Colors;
             mesh.RecalculateNormals();
-            mesh.RecalculateTangents();
         }
 
         private float GetHeight01(float x, float z, Vector2 heightRange)

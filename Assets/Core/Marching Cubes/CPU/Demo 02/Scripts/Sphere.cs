@@ -74,7 +74,6 @@ namespace MarchingCubes02
             mesh.triangles = main.Triangles;
             mesh.colors = main.Colors;
             mesh.RecalculateNormals();
-            mesh.RecalculateTangents();
         }
     }
 }

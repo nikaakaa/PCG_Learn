@@ -38,7 +38,6 @@ namespace MarchingCubes01
             mesh.triangles = main.Triangles;
             mesh.colors = main.Colors;
             mesh.RecalculateNormals();
-            mesh.RecalculateTangents();
         }
 
         protected MarchingCube CreateMarchingCube(Vector3 centerPoint, Vector3 halfSize)
