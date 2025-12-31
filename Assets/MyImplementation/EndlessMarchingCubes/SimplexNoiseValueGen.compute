@@ -1,0 +1,25 @@
+#pragma kernel SimplexNoiseValueGen
+#include "Core/ValueGen.compute"
+#include "SimplexNoise.compute"
+
+float scale;
+
+[numthreads(numThreads,numThreads,numThreads)]
+void SimplexNoiseValueGen (int3 id : SV_DispatchThreadID)
+{
+    if (id.x >= numPointsPerAxis || id.y >= numPointsPerAxis || id.z >= numPointsPerAxis)
+    {
+        return;
+    }
+
+    int index = indexFromCoord(id.x, id.y, id.z);
+    
+    // 最简单直接的方法：center 是角落，直接从角落开始计算
+    // id=0 时 pos=center, id=numPointsPerAxis-1 时 pos=center+(numPointsPerAxis-1)*cubeSize
+    // 这样 mesh 从 center 到 center+chunkSize，正好填满 chunk
+    float3 pos = center + float3(id.x, id.y, id.z) * cubeSize;
+    
+    float noise = snoise(pos * scale);
+    
+    pointsBuffer[index] = float4(pos, noise);
+}

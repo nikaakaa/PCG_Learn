@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ValueGenerator : MonoBehaviour
+public class ValueGenerator
 {
     const int threadGroupSize = 8;
 
